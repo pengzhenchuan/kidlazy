@@ -38,7 +38,7 @@ Widget buildView(ItemState state, Dispatch dispatch, ViewService viewService) {
               ),
               padding: new EdgeInsets.fromLTRB(0, 10, 10, 0),
               margin: new EdgeInsets.fromLTRB(0, 0, 0, 0),
-              width:  MediaQuery.of(viewService.context).size.width-50,
+              width: MediaQuery.of(viewService.context).size.width - 50,
             )
           ],
         ),
