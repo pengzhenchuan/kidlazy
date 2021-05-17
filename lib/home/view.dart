@@ -8,23 +8,23 @@ import 'state.dart';
 
 Widget buildView(HomeState state, Dispatch dispatch, ViewService viewService) {
   final ListAdapter adapter = viewService.buildAdapter();
-  return SmartRefresher(
+  return new SmartRefresher(
     enablePullDown: true,
     enablePullUp: false,
-    header: WaterDropHeader(),
-    footer: CustomFooter(
+    header: new WaterDropHeader(),
+    footer: new CustomFooter(
       builder: (BuildContext context, LoadStatus mode) {
         Widget body;
         if (mode == LoadStatus.idle) {
           body = new Text("pull up load");
         } else if (mode == LoadStatus.loading) {
-          body = CupertinoActivityIndicator();
+          body = new CupertinoActivityIndicator();
         } else if (mode == LoadStatus.failed) {
-          body = Text("Load Failed!Click retry!");
+          body = new Text("Load Failed!Click retry!");
         } else {
-          body = Text("No more Data");
+          body = new Text("No more Data");
         }
-        return Container(
+        return new Container(
           height: 55,
           child: new Center(child: body),
         );
