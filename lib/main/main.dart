@@ -27,18 +27,18 @@ Widget youtobe() {
     visitor: (String path, Page<Object, dynamic> page) {
       if (page.isTypeof<GlobalBaseState>()) {
         page.connectExtraStore<GlobalState>(GlobalStore.store,
-                (Object pageState, GlobalState appState) {
-              final GlobalBaseState p = pageState;
-              if (p.themeColor != appState.themeColor) {
-                if (pageState is Cloneable) {
-                  final Object copy = pageState.clone();
-                  final GlobalBaseState newState = copy;
-                  newState.themeColor = appState.themeColor;
-                  return newState;
-                }
-              }
-              return pageState;
-            });
+            (Object pageState, GlobalState appState) {
+          final GlobalBaseState p = pageState;
+          if (p.themeColor != appState.themeColor) {
+            if (pageState is Cloneable) {
+              final Object copy = pageState.clone();
+              final GlobalBaseState newState = copy;
+              newState.themeColor = appState.themeColor;
+              return newState;
+            }
+          }
+          return pageState;
+        });
       }
     },
   );
@@ -51,5 +51,4 @@ Widget youtobe() {
       });
     },
   );
-
 }
