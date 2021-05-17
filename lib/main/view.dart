@@ -21,8 +21,7 @@ Widget buildView(MainState state, Dispatch dispatch, ViewService viewService) {
       actions: <Widget>[
         new IconButton(
           icon: new Icon(Icons.phonelink_rounded),
-          onPressed: () {
-          },
+          onPressed: () {},
           tooltip: '动感地带',
         ),
         new IconButton(
@@ -57,7 +56,6 @@ Widget buildView(MainState state, Dispatch dispatch, ViewService viewService) {
         color: Colors.white,
       ),
     ),
-
     floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     bottomNavigationBar: new Material(
       elevation: 15.0,
@@ -70,7 +68,12 @@ Widget buildView(MainState state, Dispatch dispatch, ViewService viewService) {
         tabs: <Tab>[
           new Tab(text: "首页", icon: new Icon(Icons.home)),
           new Tab(text: '探索', icon: new Icon(Icons.explore)),
-          new Tab(icon: new Icon(Icons.home,color: Colors.transparent,),),
+          new Tab(
+            icon: new Icon(
+              Icons.home,
+              color: Colors.transparent,
+            ),
+          ),
           new Tab(text: '订阅', icon: new Icon(Icons.video_collection_outlined)),
           new Tab(text: '媒体库', icon: new Icon(Icons.video_settings_sharp)),
         ],

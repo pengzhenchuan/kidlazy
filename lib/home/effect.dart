@@ -17,14 +17,17 @@ Effect<HomeState> buildEffect() {
 void _onAction(Action action, Context<HomeState> ctx) {}
 
 void _initState(Action action, Context<HomeState> ctx) {
-  List<HomeData> list=<HomeData>[];
-  for(int i=0;i<10;i++){
-    list.add(new HomeData(title: "我是0$i号标题", content: "学习flutter使我快乐", time: "2021-05-17 17:55:03"));
+  List<HomeData> list = <HomeData>[];
+  for (int i = 0; i < 10; i++) {
+    list.add(new HomeData(
+        title: "我是0$i号标题",
+        content: "学习flutter使我快乐",
+        time: "2021-05-17 17:55:03"));
   }
 
   //构建符合要求的列表数据源
   List<ItemState> items = List.generate(list.length, (index) {
-    return ItemState(homeData:list[index]);
+    return ItemState(homeData: list[index]);
   });
   // List<TbCouponZBResultList> tbs = data;
   // List<TbListItemState> items;

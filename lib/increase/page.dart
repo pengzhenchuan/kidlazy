@@ -8,15 +8,12 @@ import 'view.dart';
 class IncreasePage extends Page<IncreaseState, Map<String, dynamic>> {
   IncreasePage()
       : super(
-            initState: initState,
-            effect: buildEffect(),
-            reducer: buildReducer(),
-            view: buildView,
-            dependencies: Dependencies<IncreaseState>(
-                adapter: null,
-                slots: <String, Dependent<IncreaseState>>{
-                }),
-            middleware: <Middleware<IncreaseState>>[
-            ],);
-
+          initState: initState,
+          effect: buildEffect(),
+          reducer: buildReducer(),
+          view: buildView,
+          dependencies: Dependencies<IncreaseState>(
+              adapter: null, slots: <String, Dependent<IncreaseState>>{}),
+          middleware: <Middleware<IncreaseState>>[],
+        );
 }

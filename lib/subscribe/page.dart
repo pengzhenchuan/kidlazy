@@ -8,15 +8,12 @@ import 'view.dart';
 class SubscribePage extends Page<SubscribeState, Map<String, dynamic>> {
   SubscribePage()
       : super(
-            initState: initState,
-            effect: buildEffect(),
-            reducer: buildReducer(),
-            view: buildView,
-            dependencies: Dependencies<SubscribeState>(
-                adapter: null,
-                slots: <String, Dependent<SubscribeState>>{
-                }),
-            middleware: <Middleware<SubscribeState>>[
-            ],);
-
+          initState: initState,
+          effect: buildEffect(),
+          reducer: buildReducer(),
+          view: buildView,
+          dependencies: Dependencies<SubscribeState>(
+              adapter: null, slots: <String, Dependent<SubscribeState>>{}),
+          middleware: <Middleware<SubscribeState>>[],
+        );
 }

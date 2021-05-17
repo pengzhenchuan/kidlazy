@@ -8,15 +8,12 @@ import 'view.dart';
 class ExplorePage extends Page<ExploreState, Map<String, dynamic>> {
   ExplorePage()
       : super(
-            initState: initState,
-            effect: buildEffect(),
-            reducer: buildReducer(),
-            view: buildView,
-            dependencies: Dependencies<ExploreState>(
-                adapter: null,
-                slots: <String, Dependent<ExploreState>>{
-                }),
-            middleware: <Middleware<ExploreState>>[
-            ],);
-
+          initState: initState,
+          effect: buildEffect(),
+          reducer: buildReducer(),
+          view: buildView,
+          dependencies: Dependencies<ExploreState>(
+              adapter: null, slots: <String, Dependent<ExploreState>>{}),
+          middleware: <Middleware<ExploreState>>[],
+        );
 }

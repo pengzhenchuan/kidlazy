@@ -9,5 +9,4 @@ Effect<MediaState> buildEffect() {
   });
 }
 
-void _onAction(Action action, Context<MediaState> ctx) {
-}
+void _onAction(Action action, Context<MediaState> ctx) {}

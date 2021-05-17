@@ -9,5 +9,4 @@ Effect<ExploreState> buildEffect() {
   });
 }
 
-void _onAction(Action action, Context<ExploreState> ctx) {
-}
+void _onAction(Action action, Context<ExploreState> ctx) {}

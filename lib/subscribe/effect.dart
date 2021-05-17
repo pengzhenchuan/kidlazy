@@ -9,5 +9,4 @@ Effect<SubscribeState> buildEffect() {
   });
 }
 
-void _onAction(Action action, Context<SubscribeState> ctx) {
-}
+void _onAction(Action action, Context<SubscribeState> ctx) {}

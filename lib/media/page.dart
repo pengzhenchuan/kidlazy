@@ -8,15 +8,12 @@ import 'view.dart';
 class MediaPage extends Page<MediaState, Map<String, dynamic>> {
   MediaPage()
       : super(
-            initState: initState,
-            effect: buildEffect(),
-            reducer: buildReducer(),
-            view: buildView,
-            dependencies: Dependencies<MediaState>(
-                adapter: null,
-                slots: <String, Dependent<MediaState>>{
-                }),
-            middleware: <Middleware<MediaState>>[
-            ],);
-
+          initState: initState,
+          effect: buildEffect(),
+          reducer: buildReducer(),
+          view: buildView,
+          dependencies: Dependencies<MediaState>(
+              adapter: null, slots: <String, Dependent<MediaState>>{}),
+          middleware: <Middleware<MediaState>>[],
+        );
 }

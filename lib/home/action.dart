@@ -17,6 +17,6 @@ class HomeActionCreator {
   }
 
   static Action onSetListData(list) {
-    return Action(HomeAction.setListData,payload: list);
+    return Action(HomeAction.setListData, payload: list);
   }
 }

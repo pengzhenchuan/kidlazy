@@ -9,5 +9,4 @@ Effect<IncreaseState> buildEffect() {
   });
 }
 
-void _onAction(Action action, Context<IncreaseState> ctx) {
-}
+void _onAction(Action action, Context<IncreaseState> ctx) {}
